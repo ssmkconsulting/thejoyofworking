@@ -48,14 +48,15 @@ The two stock photos are illustrations of working life, not photographs of Shard
 
 The workflow `.github/workflows/deploy.yml` builds, checks, uploads `dist/`, and deploys with GitHub Pages on every push to `main`. It can also be run manually from Actions. It uses `contents: read`, `pages: write`, and `id-token: write`.
 
-**Initial publishing requirement:** at implementation time, this repository is private and GitHub displays “Upgrade or make this repository public to enable Pages.” Either keep the repository private and enable a qualifying GitHub plan, or authorize changing the repository to public. Publishing a website and exposing the repository source are separate choices; repository visibility has not been changed.
+The repository is public with the owner's authorization, and GitHub Pages uses **GitHub Actions** as its build source. HTTPS is enforced.
 
-After resolving that requirement:
+Production URL: https://ssmkconsulting.github.io/thejoyofworking/
 
-1. Open repository **Settings → Pages** and choose **GitHub Actions** as the build source.
-2. Open **Actions → Deploy to GitHub Pages → Run workflow** on `main`, or push an update to `main`.
-3. Wait for both build and deploy jobs to succeed.
-4. Open https://ssmkconsulting.github.io/thejoyofworking/ and check styles, images, navigation, and contact behavior. This URL is the intended destination; it is not a claim that publication has succeeded.
+To redeploy:
+
+1. Build and check locally, then commit and push the changes to `main`.
+2. Open **Actions → Deploy to GitHub Pages** and wait for both build and deploy jobs to succeed. You can also choose **Run workflow** on `main` to redeploy manually.
+3. Open the production URL and check styles, images, navigation, and contact behavior.
 
 ## Verification
 

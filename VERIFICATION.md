@@ -16,6 +16,16 @@ Verified locally on 2026-10-26 using the production `dist/` build at `/thejoyofw
 
 ## Publication status
 
-GitHub Pages is blocked by the current account/repository combination. The repository is private; Settings → Pages shows “Upgrade or make this repository public to enable Pages.” Repository visibility was preserved. The complete Actions workflow is included, but live deployment and live asset loading cannot be verified until Pages is enabled.
+Published and verified on 2026-10-26 at https://ssmkconsulting.github.io/thejoyofworking/.
 
-The intended production URL is https://ssmkconsulting.github.io/thejoyofworking/; it is not yet verified live. Resolve the plan/visibility requirement, choose GitHub Actions in Pages settings, then run the deployment workflow and verify the live URL.
+The owner authorized making the repository public. GitHub Pages is configured for GitHub Actions with HTTPS enforced. Deployment [40339491187](https://github.com/ssmkconsulting/thejoyofworking/actions/runs/40339491187) succeeded for website commit `edd11bbdb6b526f103ec2411aa40c32e1dde48e6`.
+
+Live verification:
+
+- Opened the published website in Chrome and inspected the rendered desktop page.
+- All 12 production files returned HTTP 200 and byte-for-byte matched the local production build: HTML, CSS, JavaScript, both fonts, all images, favicon, social card, sitemap, and robots.txt.
+- Live section links resolve; workshop inquiry selects Workshops; unconfigured submission remains disabled; FAQ responds to Enter.
+- Live mobile view at 390px has no horizontal overflow; menu opens and Escape closes it.
+- No browser console errors during the live checks.
+
+Remaining content setup: replace demo imagery and portrait placeholder when client photographs are supplied, and configure a verified static-form destination before accepting inquiries. These do not block viewing the published website.
